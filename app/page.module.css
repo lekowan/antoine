@@ -1,0 +1,20 @@
+.main {
+  font-size: 0.75em;
+  background-color: white;
+  color: #eceff1;
+  line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  max-height: 100vh;
+  overflow-y: scroll;
+  -webkit-scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
