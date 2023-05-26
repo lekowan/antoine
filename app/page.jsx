@@ -2,14 +2,16 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
+import Menu from "./components/menu/Menu";
 import Home from "./components/home/Home";
 
 export default function Homepage() {
   return (
-    <div className={styles.main}>
-      <div className={styles.wrapper}>
-        <Home></Home>
-        {/*
+    <>
+      <div className={styles.main}>
+        <div className={styles.wrapper}>
+          <Home></Home>
+          {/*
       <section id="html5" className={styles.}="scene">
         <div className={styles.}="header-content green-background">
           <div className={styles.}="header header-home dark-green">html5</div>
@@ -186,7 +188,9 @@ export default function Homepage() {
         </svg>
       </div>
       */}
+        </div>
       </div>
-    </div>
+      <Menu></Menu>
+    </>
   );
 }
